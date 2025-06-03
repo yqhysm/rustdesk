@@ -84,13 +84,6 @@ class _OnlineStatusWidgetState extends State<OnlineStatusWidget> {
                 stateGlobal.svcStatus.value == SvcStatus.ready &&
                 _svcIsUsingPublicServer.value),
             child: Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Text(', ', style: TextStyle(fontSize: em)),
-                Flexible(
-                  child: InkWell(
-                    onTap: onUsePublicServerGuide,
-                    child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [],
             ),
