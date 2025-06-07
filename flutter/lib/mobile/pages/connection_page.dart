@@ -229,7 +229,7 @@ class _ConnectionPageState extends State<ConnectionPage> {
                           _idController.id = text;
                         },
                         style: const TextStyle(
-                          fontFamily: 'STZhongsong',
+                          fontFamily: 'WorkSans',
                           fontWeight: FontWeight.bold,
                           fontSize: 30,
                           color: MyTheme.idColor,
