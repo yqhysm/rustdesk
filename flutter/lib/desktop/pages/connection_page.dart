@@ -392,7 +392,7 @@ class _ConnectionPageState extends State<ConnectionPage>
                           keyboardType: TextInputType.visiblePassword,
                           focusNode: fieldFocusNode,
                           style: const TextStyle(
-                            fontFamily: 'STZhongsong',
+                            fontFamily: 'WorkSans',
                             fontSize: 22,
                             height: 1.4,
                           ),
