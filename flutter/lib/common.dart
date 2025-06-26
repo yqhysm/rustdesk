@@ -3429,7 +3429,7 @@ class ComboBox extends StatelessWidget {
                 value: value,
                 child: Text(
                   value,
-                  style: const TextStyle(fontSize: 15),
+                  style: const TextStyle(fontFamily: 'WorkSans', fontSize: 15),
                   overflow: TextOverflow.ellipsis,
                 ).marginOnly(left: 15),
               );
