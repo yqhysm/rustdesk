@@ -169,7 +169,7 @@ flutter:
         - asset: assets/more.ttf
     - family: WorkSans
       fonts:
-        - asset: assets/MiSans-Bold.ttf
+        - asset: assets/MiSans-Regular.ttf
     - family: Roboto
       fonts:
         - asset: assets/MiSans-Regular.ttf
