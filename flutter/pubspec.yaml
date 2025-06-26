@@ -167,7 +167,7 @@ flutter:
     - family: More
       fonts:
         - asset: assets/more.ttf
-    - family: monospace
+    - family: WorkSans
       fonts:
         - asset: assets/MiSans-Bold.ttf
     - family: Roboto
