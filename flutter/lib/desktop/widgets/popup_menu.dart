@@ -123,12 +123,12 @@ abstract class MenuEntryBase<T> {
 
   enabledStyle(BuildContext context) => TextStyle(
       color: Theme.of(context).textTheme.titleLarge?.color,
-      fontFamily: 'Roboto',
+      fontFamily: 'WorkSans',
       fontSize: MenuConfig.fontSize,
       fontWeight: FontWeight.normal);
   disabledStyle() => TextStyle(
       color: Colors.grey,
-      fontFamily: 'Roboto',
+      fontFamily: 'WorkSans',
       fontSize: MenuConfig.fontSize,
       fontWeight: FontWeight.normal);
 }
@@ -348,7 +348,7 @@ class MenuEntrySubRadios<T> extends MenuEntryBase<T> {
                     opt.text,
                     style: TextStyle(
                         color: Theme.of(context).textTheme.titleLarge?.color,
-                        fontFamily: 'Roboto',
+                        fontFamily: 'WorkSans',
                         fontSize: MenuConfig.fontSize,
                         fontWeight: FontWeight.normal),
                   ),
@@ -401,7 +401,7 @@ class MenuEntrySubRadios<T> extends MenuEntryBase<T> {
             text,
             style: TextStyle(
                 color: Theme.of(context).textTheme.titleLarge?.color,
-                fontFamily: 'Roboto',
+                fontFamily: 'WorkSans',
                 fontSize: MenuConfig.fontSize,
                 fontWeight: FontWeight.normal),
           ),
@@ -464,7 +464,7 @@ abstract class MenuEntrySwitchBase<T> extends MenuEntryBase<T> {
       BuildContext context, MenuConfig conf) {
     textStyle ??= TextStyle(
             color: Theme.of(context).textTheme.titleLarge?.color,
-            fontFamily: 'Roboto',
+            fontFamily: 'WorkSans',
             fontSize: MenuConfig.fontSize,
             fontWeight: FontWeight.normal)
         .obs;
