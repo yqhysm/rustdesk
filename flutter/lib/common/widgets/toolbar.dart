@@ -26,6 +26,11 @@ class TTextMenu {
       this.divider = false});
 
   Widget getChild() {
+    final styledChild = DefaultTextStyle(
+      style: TextStyle(fontFamily: 'WorkSans'),
+      child: child,
+    );
+    
     if (trailingIcon != null) {
       return Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
