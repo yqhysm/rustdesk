@@ -28,7 +28,7 @@ class TTextMenu {
   Widget getChild() {
     final textWidget = child is Text
         ? DefaultTextStyle.merge(
-            style: TextStyle(fontFamily: 'WorkSans'), // 统一设置字体
+            style: TextStyle(fontFamily: 'WorkSans'),
             child: child,
           )
         : child;
