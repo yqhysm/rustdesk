@@ -26,12 +26,15 @@ class TTextMenu {
       this.divider = false});
 
   Widget getChild() {
-    final textWidget = child is Text
-        ? DefaultTextStyle.merge(
-            style: TextStyle(fontFamily: 'WorkSans'),
-            child: child,
-          )
-        : child;
+  final textWidget = child is Text
+      ? DefaultTextStyle.merge(
+          style: const TextStyle(
+            fontFamily: 'WorkSans',
+            inherit: false,
+          ),
+          child: child,
+        )
+      : child;
     
     if (trailingIcon != null) {
       return Row(
