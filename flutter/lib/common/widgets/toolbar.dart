@@ -26,10 +26,30 @@ class TTextMenu {
       this.divider = false});
 
   Widget getChild() {
-    final styledChild = DefaultTextStyle(
-      style: TextStyle(fontFamily: 'WorkSans'),
-      child: child,
-    );
+    final textStyle = TextStyle(fontFamily: 'WorkSans');
+    
+    Widget wrappedChild = child is Text 
+        ? Text(
+            (child as Text).data ?? '',
+            style: (child as Text).style?.merge(textStyle) ?? textStyle,
+            key: (child as Text).key,
+            strutStyle: (child as Text).strutStyle,
+            textAlign: (child as Text).textAlign,
+            textDirection: (child as Text).textDirection,
+            locale: (child as Text).locale,
+            softWrap: (child as Text).softWrap,
+            overflow: (child as Text).overflow,
+            textScaleFactor: (child as Text).textScaleFactor,
+            maxLines: (child as Text).maxLines,
+            semanticsLabel: (child as Text).semanticsLabel,
+            textWidthBasis: (child as Text).textWidthBasis,
+            textHeightBehavior: (child as Text).textHeightBehavior,
+            selectionColor: (child as Text).selectionColor,
+          )
+        : DefaultTextStyle(
+            style: textStyle,
+            child: child,
+          );
     
     if (trailingIcon != null) {
       return Row(
