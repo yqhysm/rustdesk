@@ -26,16 +26,13 @@ class TTextMenu {
       this.divider = false});
 
   Widget getChild() {
-  final textWidget = child is Text
-      ? DefaultTextStyle.merge(
-          style: const TextStyle(
-            fontFamily: 'WorkSans',
-            inherit: false,
-          ),
-          child: child,
-        )
-      : child;
-    
+    final textWidget = child is Text
+        ? DefaultTextStyle.merge(
+            style: TextStyle(fontFamily: 'WorkSans'),
+            child: child,
+          )
+        : child;
+
     if (trailingIcon != null) {
       return Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -56,19 +53,29 @@ class TRadioMenu<T> {
   final T groupValue;
   final ValueChanged<T?>? onChanged;
 
-  TRadioMenu(
-      {required this.child,
-      required this.value,
-      required this.groupValue,
-      required this.onChanged});
+  TRadioMenu({
+    required Widget child,
+    required this.value,
+    required this.groupValue,
+    required this.onChanged,
+  }) : child = DefaultTextStyle.merge(
+          style: const TextStyle(fontFamily: 'WorkSans'),
+          child: child,
+        );
 }
 
 class TToggleMenu {
   final Widget child;
   final bool value;
   final ValueChanged<bool?>? onChanged;
-  TToggleMenu(
-      {required this.child, required this.value, required this.onChanged});
+  TToggleMenu({
+    required Widget child,
+    required this.value,
+    required this.onChanged,
+  }) : child = DefaultTextStyle.merge(
+          style: const TextStyle(fontFamily: 'WorkSans'),
+          child: child,
+        );
 }
 
 handleOsPasswordEditIcon(
