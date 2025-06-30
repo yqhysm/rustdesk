@@ -390,12 +390,12 @@ class MyTheme {
           )
         : null,
     textTheme: const TextTheme(
-        titleLarge: TextStyle(fontSize: 19, color: Colors.black87),
-        titleSmall: TextStyle(fontSize: 14, color: Colors.black87),
-        bodySmall: TextStyle(fontSize: 12, color: Colors.black87, height: 1.25),
+        titleLarge: TextStyle(fontFamily: 'WorkSans', fontSize: 19, color: Colors.black87),
+        titleSmall: TextStyle(fontFamily: 'WorkSans', fontSize: 14, color: Colors.black87),
+        bodySmall: TextStyle(fontFamily: 'WorkSans', fontSize: 12, color: Colors.black87, height: 1.25),
         bodyMedium:
-            TextStyle(fontSize: 14, color: Colors.black87, height: 1.25),
-        labelLarge: TextStyle(fontSize: 16.0, color: MyTheme.accent80)),
+            TextStyle(fontFamily: 'WorkSans', fontSize: 14, color: Colors.black87, height: 1.25),
+        labelLarge: TextStyle(fontFamily: 'WorkSans', fontSize: 16.0, color: MyTheme.accent80)),
     cardColor: grayBg,
     hintColor: Color(0xFFAAAAAA),
     visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -488,11 +488,11 @@ class MyTheme {
           )
         : null,
     textTheme: const TextTheme(
-      titleLarge: TextStyle(fontSize: 19),
-      titleSmall: TextStyle(fontSize: 14),
-      bodySmall: TextStyle(fontSize: 12, height: 1.25),
-      bodyMedium: TextStyle(fontSize: 14, height: 1.25),
-      labelLarge: TextStyle(
+      titleLarge: TextStyle(fontFamily: 'WorkSans', fontSize: 19),
+      titleSmall: TextStyle(fontFamily: 'WorkSans', fontSize: 14),
+      bodySmall: TextStyle(fontFamily: 'WorkSans', fontSize: 12, height: 1.25),
+      bodyMedium: TextStyle(fontFamily: 'WorkSans', fontSize: 14, height: 1.25),
+      labelLarge: TextStyle(fontFamily: 'WorkSans', 
         fontSize: 16.0,
         fontWeight: FontWeight.bold,
         color: accent80,
