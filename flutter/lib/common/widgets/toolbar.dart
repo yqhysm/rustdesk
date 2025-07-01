@@ -14,6 +14,17 @@ import 'package:get/get.dart';
 
 bool isEditOsPassword = false;
 
+class TTextMenu {
+  final Widget child;
+  final VoidCallback? onPressed;
+  Widget? trailingIcon;
+  bool divider;
+  TTextMenu(
+      {required this.child,
+      required this.onPressed,
+      this.trailingIcon,
+      this.divider = false});
+
   Widget getChild() {
     if (trailingIcon != null) {
       return Row(
